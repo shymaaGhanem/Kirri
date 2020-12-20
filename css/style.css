@@ -1,0 +1,332 @@
+body
+{
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*navbar*/
+.navbar
+{
+    width:100%;
+}
+ .navbar-nav .nav-item .nav-link
+{
+    color: #fff ;
+    transition: color .5s;
+}
+.navbar-nav .nav-item .nav-link:hover
+{
+   color: #e65f78;
+}
+
+.navbar-nav li .active 
+{
+    color: #e65f78 !important;
+}
+/*end navbar*/
+
+/*start home */
+#home
+{
+    color: white;
+    background-image: url('../images/header-bg.jpg');
+    background-position: center center;
+    background-size: 100% 100%;
+    height: 100vh;
+    text-align: center;
+   
+}
+
+#home .overlay
+{
+    
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+}
+#home .overlay .caption
+{
+    height: 100%;
+}
+#home .overlay .caption h1
+{
+font-size: 60px;
+font-weight: 700;
+}
+#home .overlay .caption p
+{
+    width:35%;
+}
+#home .overlay .caption .DOWNLOAD-btn
+{
+    border:2px solid #fff;
+    border-radius: 30px;
+    padding:16px 30px;
+    text-decoration: none;
+    color:#fff;
+    font-size:18px;
+    transition: all 1s;
+}
+#home .overlay .caption .DOWNLOAD-btn:hover
+{
+background-color: white;
+color: #000;
+}
+
+#home .setting
+{
+    padding:10px;
+    padding-bottom: 30px;  
+     width: 30px;
+    height: 30px;
+    background-color: #2b2424;
+    position: fixed;
+    top: 60px;
+    left: 0px;
+    
+}
+#home .scroll
+{
+    position: absolute;
+    bottom: 50px;
+    padding:30px 15px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    animation: scroll 2s infinite;
+}
+#home .scroll::after
+{
+    content:"";
+    position: absolute;
+    left:14px;
+    bottom: 10px;
+    width: 3px;
+    height: 10px;
+    background-color: #fff;
+}
+@keyframes scroll
+{
+    0%{bottom:15px;}
+    20%{bottom:20px;}
+    40%{bottom:30px;}
+    60%{bottom:20px;}
+    80%{bottom:15px;}
+    100%{bottom:10px;}
+
+}
+/*End home */
+@media (max-width:991px)
+{
+    nav
+    {
+        background-color: #fff;
+    }
+    .navbar-light .navbar-nav .nav-link
+    {
+        color:#000;
+    }
+    .navbar-light .navbar-brand
+    {
+        color:#000;
+    }
+    #home .overlay .caption h1
+{
+font-size: 30px;
+font-weight: 700;
+}
+#home .overlay .caption p
+{
+    width:90%;
+}
+}
+
+/*start about*/
+.about-icon span
+{
+    border: 2px solid gray;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 5px;
+    transition: all .5s;
+
+}
+
+.about-icon span:hover
+{
+    color: #e65f78;
+    border-color: #e65f78;;
+
+}
+.about-title
+{
+    color: #e65f78;
+}
+/*end about*/
+
+
+
+
+/*start services */
+.service-box
+{
+    margin: 10px;
+}
+
+.service-box  i{
+    color:#e65f78;
+  
+}
+
+.service-box .brdr
+{
+    width: 60px;
+    height: 2px;
+    background-color: #e65f78;
+    margin: 10px  auto;
+    transition: width 0.5s;
+}
+
+.service-box:hover  .brdr
+{
+
+    width: 90px;
+}
+
+/*start client*/
+
+.carousel-indicators .custom
+{
+    background-color:#e65f78;
+    width: 20px;
+    transition: width 0.5s;
+
+}
+
+.carousel-indicators .active
+{
+    width: 25px;
+}
+
+/*end cllient*/
+
+/*start our-works*/
+.info .layer
+{
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background-color: rgba(0,0,0,0.7);
+    opacity: 0;
+}
+
+.info:hover .layer
+{
+    opacity: 1;
+}
+.details
+{
+    position: relative;
+    top:70%;
+    transition: top 1s;
+}
+
+.info:hover .details
+{
+    top:0;
+}
+
+.details h4
+{
+
+    color:#fff;
+}
+.work-img
+{
+    transition:transform 1s;
+}
+.info:hover .work-img
+{
+    transform: scale(1.2,1.2);
+}
+
+#our-Works .nav-link
+{
+    color: #000;
+}
+#our-Works .nav-link.active
+{
+    background-color: tomato;
+    color: #fff;
+
+}
+
+#our-Works .nav-link:hover
+{
+    background-color: tomato;
+    color: #fff;
+}
+
+/*end our-works*/
+
+/*start blog*/
+.card
+{
+    border: none;
+}
+.small-link a
+{
+
+    text-decoration: none;
+    color:gray;
+
+}
+.text-custom a
+{
+    text-decoration: none;
+    color:#e65f78;
+}
+/*end blog*/
+
+
+
+
+/*start contact */
+
+.row .icon i
+{
+    color:#e65f78;
+    font-size:2.5rem;
+
+}
+.row form input:focus , .row form textarea:focus
+{
+    border-color: #dc3545;
+    box-shadow: none;
+}
+form .button
+{
+    font-size: 14px;
+    background-color: #e65f78;
+    color: #fff;
+    transition: all .5s;
+}
+
+form .button:hover
+{
+    background-color: #dc3545;
+}
+
+/*End contact */
+
+/*start footer*/
+#footer
+{
+  background-color:#242424 !important
+}
+.footer-icons  span
+{
+    padding: 13px;
+    background-color: rgba(241, 241, 241, 0.08);;
+}
+/*end footer*/
